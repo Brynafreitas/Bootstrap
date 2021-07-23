@@ -22,11 +22,15 @@
 
 
     <style>
-        .navbar-brand {
+        #logo-menu {
             font-size: 250%;
-            font-family: 'Abril Fatface', cursive;
+            font-family: 'Abril Fatface', 'cursive';
         }
 
+        .tm-social {
+            width: 50px;
+            height: 50px;
+        }
     </style>
 </head>
 
@@ -34,7 +38,7 @@
 
     <!--menu-->
     <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
-        <a class="navbar-brand text-light" href="#">OLHARES</a>
+        <a class="navbar-brand text-light" href="index.html" id="logo-menu">OLHARES</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
             aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
             <span class="navbar-toggler-icon"></span>
@@ -43,11 +47,11 @@
         <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link text-light" href="#index.html">Home <span class="sr-only">(página
+                    <a class="nav-link text-light" href="index.html">Home <span class="sr-only">(página
                             atual)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light" href="#">Fotografia</a>
+                    <a class="nav-link text-light" href="fotografia.html">Fotografia</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-light" href="#">Contato</a>
@@ -64,35 +68,140 @@
 
     <!--carousel-->
 
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img class="d-block w-100" class="img_1" src="assets/zona_sul.jfif"
-                    alt="Primeiro Slide">
+    <div class="container-fluid p-0">
+
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner h-50">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" class="img_1" src="assets/imgs/sp.jpg" alt="Foto do prédio Banespa de SP"
+                        height="500px">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" class="img_2" src="assets/imgs/capao_sp.jpg "
+                        alt="Foto do bairro Capão Redondo de SP" height="500px">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" class="img_3" src="assets/imgs/zonasul.jpg"
+                        alt="Foto de um carro low rider com placa zona sul" height="500px">
+                </div>
             </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" class="img_2" src="assets/capao.jfif"
-                    alt="Segundo Slide">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" class="img_3" src="assets/sp.jfif"
-                    alt="Terceiro Slide">
-            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Anterior</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Próximo</span>
-        </a>
+
+    </div>
+
+    <!--/carrousel-->
+
+
+    <!--jumbotron-->
+
+    <div class="jumbotron jumbotron-fluid bg-white">
+        <div class="container">
+            <h1 class="display-4">Olhares</h1>
+            <p class="lead">Compartilhando através da arte as diferentes formas de se enxergar o mundo.</p>
+        </div>
     </div>
 
 
+    <!--/jumbotron-->
 
 
 
+
+    <!--texto e video-->
+
+    <div class="container">
+
+
+        <div class="row mt-5 mb-5">
+            <div class="col-md-6">
+                <h3>Outras formas de olhar o mundo</h3>
+                <p>Junto com a fotografia temos o audiovisual que nós permite explorar muito mais da visão das pessoas e
+                    o
+                    mundo.
+                </p>
+
+            </div>
+
+            <div class="col-md-6">
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/4dq-nn1i-hQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            </div>
+
+
+
+
+            <!--/texto e video-->
+
+
+            <!--col sobre mim-->
+
+
+            <div class="row text-center pt-5 mb-5">
+                <h3 class="mt-4">Um pouco sobre mim:</h3>
+                <div class="col-12 pb-4 mt-4">
+                    <img class="bd-placeholder-img rounded-circle" width="140" height="140"
+                        src="assets/imgs/eu_foto.jpg">
+                    <h2>Bruna de Freitas</h2>
+                    <p>Meu nome é Bruna tenho 23 anos, moro em SP no Capão Redondo com meus pais e minha irmã mais nova,
+                        sou
+                        apaixonada por artes em geral e principalmente pela fotografia, através dela consigo enxergar as
+                        diferentes formas do mundo, e essa é minha primeira página usando bootstramp.</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!--/col-->
+
+
+
+
+
+
+    <!--footer-->
+
+
+    <div class="container-fluid p-0 justify-content-center text-center mt-4">
+        <footer class="bg-dark">
+
+            <div class="row d-flex justify-content-center md-2">
+                <div class="col-md-12">
+
+                    <div class="text-center">
+                        <a href="https://www.linkedin.com/in/brunadefreit4s/" target="_blank" class="p-2"><img
+                                class="tm-social" src="assets/imgs/linkedinlogo.png" alt="Linkedin"></a>
+                        <a href="https://github.com/Brynafreitas" target="_blank" class="p-2"><img class="tm-social"
+                                src="assets/imgs/logogithub.png" alt="Github">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row mt-2">
+                    <div class="col-md-12">
+
+                        <p class="text-light text-center">
+                            &copy; All Rights Reserved. Bruna de Freitas.
+                        </p>
+
+                    </div>
+                </div>
+
+        </footer>
+
+
+    </div>
+
+    <!--/footer-->
 
 
 
