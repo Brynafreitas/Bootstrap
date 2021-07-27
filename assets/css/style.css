@@ -1,0 +1,87 @@
+body{
+    overflow-x: hidden;
+}
+
+
+#bg-menu{
+    background-color: #000000;
+}
+
+
+ #logo-menu {
+    font-size: 250%;
+    font-family: 'Abril Fatface', 'cursive';
+ 
+}
+
+.tm-social {
+    width: 50px;
+    height: 50px;
+}
+
+
+/* index */
+
+.fa{
+    font-size: 30px;
+    color: #000000;
+
+}
+
+.fa:hover{
+    color: #C0C0C0;
+}
+
+
+
+/* fotografia */
+
+.grow img:hover{
+
+    transform: scale(110%) !important;
+
+}
+
+
+
+
+
+/* contato */
+
+
+
+.jumbotron {
+
+    background:none !important;
+}
+
+
+
+.contato{
+    
+    background: linear-gradient(50deg, #F3F4ED, #53616280, #42464288);
+    background-size: 300% 300%;
+    animation: colors 10s ease infinite;
+    overflow-x: hidden;
+    height: 100vh;
+        
+      
+}
+
+
+@keyframes colors {
+
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
